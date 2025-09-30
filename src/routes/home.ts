@@ -10,7 +10,7 @@ title:"Home | Break The Cycle",
 
 description:"Youth-led initiative tackling cyber addiction, plagiarism, and underperformance.",
 
-active:",home"});
+active:"home"});
 
 });
 
