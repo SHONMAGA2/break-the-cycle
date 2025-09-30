@@ -6,5 +6,12 @@ const router = express.Router();
 router.set("view engine","ejs");
 
 router.get("/",(req: Request,res: Response) =>{
-res.render("home");
+res.render("home",{
+
+title:"Home | Break The Cycle",
+
+description:"Youth-led initiative tackling cyber addiction, plagiarism, and underperformance.",
+
+active:",home"});
+
 });
