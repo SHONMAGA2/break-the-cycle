@@ -30,7 +30,7 @@
   .navboard ul {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
