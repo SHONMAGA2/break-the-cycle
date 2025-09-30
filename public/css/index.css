@@ -1,43 +1,18 @@
+/* Mobile screens */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9fafb;
-    color: #111827;
-  }
-
-  .navboard {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1E3A8A;
-    color: #FFFFFF;
-    border-bottom: 4px solid #10B981;
-  }
-
-  .navboard h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  .tagline {
-    font-size: 0.9rem;
-    margin: 0.5rem 0 1rem;
-    color: #E0E7FF;
-  }
 
   .navboard ul {
     display: flex;
+    flex-wrap: wrap;       /* allows links to go to next line if needed */
     justify-content: center;
-    gap: 15px;
+    gap: 10px;             /* reduce gap a little */
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
   .navboard a {
-    padding: 5px 10px;
+    padding: 5px 8px;      /* slightly smaller padding to help fit links */
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 8px;
@@ -46,38 +21,6 @@
 
   .navboard a:hover {
     background-color: #10B981;
-  }
-
-  main section {
-    border-radius: 1rem;
-    padding: 1.5rem;
-    margin: 1.5rem;
-    background-color: #6B7280;
-    color: #FFFFFF;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
-  }
-
-  .articles {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .article_box h3 {
-    margin-top: 0;
-    color: #FBBF24;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    background-color: #1E3A8A;
-    color: #FFFFFF;
-  }
-
-  footer strong {
-    color: #10B981;
   }
 }
 
