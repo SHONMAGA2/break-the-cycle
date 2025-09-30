@@ -1,26 +1,20 @@
-/* Mobile screens */
+/* Mobile screens exact fit */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
   .navboard ul {
     display: flex;
-    flex-wrap: wrap;       /* allows links to go to next line if needed */
     justify-content: center;
-    gap: 10px;             /* reduce gap a little */
+    gap: 15px; /* keep your original gap */
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
   .navboard a {
-    padding: 5px 8px;      /* slightly smaller padding to help fit links */
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-
-  .navboard a:hover {
-    background-color: #10B981;
+    padding: 5px 0;       /* keep vertical padding */
+    width: 53px;          /* exact width so all links fit */
+    text-align: center;   /* keep text centered */
+    box-sizing: border-box; /* include padding in width */
   }
 }
 
