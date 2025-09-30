@@ -8,7 +8,9 @@ app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 
 import homeRoute from './routes/home';
+import aboutRoute from './routes/about';
 
 app.use("/",homeRoute);
+app.use("/about",aboutRoute);
 
 export default app;
