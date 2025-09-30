@@ -9,6 +9,6 @@ app.set("views",path.join(__dirname,"views"));
 
 import homeRoute from './routes/home';
 
-app.use("/home",homeRoute);
+app.use("/",homeRoute);
 
 export default app;
