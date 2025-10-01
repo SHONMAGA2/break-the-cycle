@@ -156,12 +156,13 @@ main {
 
   body {
     font-family: Arial, sans-serif;
-    background-color: #F9FAF5;
-    color: #111827;
+    background-color: #F9FAF5; /* Light neutral background */
+    color: #111827; /* Main text color */
     margin: 0;
     padding: 0;
   }
 
+  /* Navbar */
   .navboard {
     display: flex;
     justify-content: space-between;
@@ -179,7 +180,7 @@ main {
 
   .tagline {
     font-size: 1rem;
-    color: #D1FAE5;
+    color: #D1FAE5; /* Lighter teal */
   }
 
   .navboard ul {
@@ -199,17 +200,19 @@ main {
   }
 
   .navboard a:hover {
-    background-color: #14B8A6;
+    background-color: #14B8A6; /* Teal hover */
   }
 
+  /* Main layout */
   main {
     flex: 1;
     padding: 3rem 6rem;
   }
 
+  /* Intro section */
   .intro h1 {
     font-size: 2.5rem;
-    color: #065F46;
+    color: #065F46; /* Deep Green */
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -223,6 +226,7 @@ main {
     color: #333333;
   }
 
+  /* Solutions section */
   .Solutions {
     display: flex;
     justify-content: space-between;
@@ -232,7 +236,7 @@ main {
 
   .Solutions article {
     flex: 1;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White cards */
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
@@ -256,8 +260,9 @@ main {
     color: #333333;
   }
 
+  /* Sustainability section */
   .Sustainability {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White card */
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
@@ -269,7 +274,7 @@ main {
 
   .Sustainability h1 {
     text-align: center;
-    color: #065F46;
+    color: #065F46; /* Deep Green */
     margin-bottom: 1rem;
     font-size: 2rem;
   }
@@ -282,6 +287,7 @@ main {
     color: #333333;
   }
 
+  /* Transition button section */
   .transition {
     text-align: center;
     margin-bottom: 3rem;
@@ -294,7 +300,7 @@ main {
   }
 
   .transition button {
-    background-color: #14B8A6;
+    background-color: #14B8A6; /* Teal button */
     color: #FFFFFF;
     border: none;
     padding: 0.8rem 2rem;
@@ -305,18 +311,19 @@ main {
   }
 
   .transition button:hover {
-    background-color: #065F46;
+    background-color: #065F46; /* Darker green on hover */
   }
 
+  /* Footer */
   footer {
     padding: 1.5rem 3rem;
     text-align: center;
-    background-color: #065F46;
+    background-color: #065F46; /* Deep Green */
     color: #FFFFFF;
     margin-top: auto;
   }
 
   footer strong {
-    color: #14B8A6;
+    color: #14B8A6; /* Teal accent */
   }
 }
