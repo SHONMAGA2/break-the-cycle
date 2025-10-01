@@ -1,127 +1,91 @@
-/* Global layout fix for sticky footer */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+/* Global Styles for ALL screens */
+body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* mobile colors */
+  color: #111827;           /* mobile colors */
 }
 
-main {
-  flex: 1; /* pushes footer down */
+.navboard {
+  text-align: center;
+  padding: 1rem;
+  background-color: #065F46; /* mobile deep green */
+  color: #FFFFFF;
+  border-bottom: 4px solid #14B8A6; /* teal accent */
 }
 
-/* Mobile screens */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-
-  body {
-    background-color: white;
-    color: #111827;
-  }
-
-  .navboard {
-    text-align: center;
-    padding: 1rem;
-    background-color: #065F46; /* Deep Green */
-    color: #FFFFFF;
-    border-bottom: 4px solid #14B8A6; /* Teal accent */
-  }
-
-  .navboard ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navboard a {
-    padding: 5px 0;
-    width: 53px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-
-  .navboard a:hover {
-    background-color: #14B8A6;
-  }
-
-  main h1 {
-    color: #065F46;
-  }
-
-  main section {
-    margin: 1rem;
-    border-radius: 2rem;
-    text-align: center;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
-    color: #333333;
-  }
-
-  .Solutions h2 {
-    color: #F59E0B; /* Gold highlight */
-  }
-
-  button {
-    height: 1.5rem;
-    background-color: #14B8A6;
-    border-radius: 1rem;
-    color: white;
-    border: none;
-  }
-
-  button:hover {
-    background-color: #065F46;
-    cursor: pointer;
-  }
-
-  footer {
-    padding: 1rem;
-    text-align: center;
-    background-color: #065F46;
-    color: white;
-  }
-
-  footer strong {
-    color: #14B8A6;
-  }
+.navboard h1 {
+  margin: 0;
 }
 
-/* Tablets (medium screens) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .navboard {
-    padding: 1.5rem;
-  }
-
-  .navboard ul {
-    gap: 25px;
-  }
-
-  .navboard a {
-    padding: 6px 12px;
-  }
-
-  main section {
-    max-width: 80%;
-    padding: 1.5rem 2rem;
-    margin: 1.5rem auto;
-  }
-
-  .Solutions article {
-    margin-bottom: 1rem;
-  }
+.navboard ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* PCs / Desktops (large screens) */
+.navboard a {
+  padding: 5px 0;
+  width: 53px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navboard a:hover {
+  background-color: #14B8A6;
+}
+
+main h1 {
+  color: #065F46;
+}
+
+main section {
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+  color: #333333;
+}
+
+.Solutions h2 {
+  color: #F59E0B;
+}
+
+button {
+  height: 1.5rem;
+  background-color: #14B8A6;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #065F46;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #065F46;
+  color: white;
+}
+
+footer strong {
+  color: #14B8A6;
+}
+
+/* Only adjust spacing for larger screens */
 @media only screen and (min-width: 1025px) {
-
   .navboard {
     padding: 2rem;
   }
@@ -138,10 +102,6 @@ main {
     margin: 2rem auto;
     padding: 2rem 3rem;
     max-width: 60%;
-  }
-
-  .Solutions article {
-    margin-bottom: 1.5rem;
   }
 
   button {
