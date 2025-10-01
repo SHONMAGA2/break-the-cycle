@@ -163,6 +163,9 @@
   }
 }
 
+/* =======================
+   Desktop (large screens)
+======================= */
 @media only screen and (min-width: 1025px) {
 
   body {
@@ -173,40 +176,55 @@
     color: #222222;
   }
 
+  /* Navboard */
   .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
+    text-align: center;            /* centered like mobile */
+    padding: 1rem;                 /* match mobile padding */
     background-color: #1F3B6F;
     color: #FFF8E1;
     border-bottom: 4px solid #B23A48;
   }
 
   .navboard h1 {
+    margin: 0;
     font-size: 2.5rem;
+    color: #FFF8E1;
   }
 
   .navboard ul {
     display: flex;
-    gap: 35px; /* updated */
+    justify-content: center;       /* center links */
+    gap: 35px;                     /* slightly larger for desktop readability */
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .navboard a {
     padding: 8px 12px;
     width: auto;
+    text-decoration: none;
+    color: #FFF8E1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
+  .navboard a:hover {
+    background-color: #B23A48;
+    transform: scale(1.05);
+  }
+
+  /* Main sections */
   main section {
-    padding: 2rem 3rem; /* updated */
+    padding: 2rem 3rem;
     margin: 2rem auto;
-    text-align: left;
+    text-align: center;             /* match mobile alignment */
     border: solid 1px #1F3B6F;
     border-radius: 2rem;
     background-color: #FFF8E1;
     box-shadow: 5px 7px 8px rgba(0,0,0,0.3);
-    max-width: 60%; /* updated */
-    font-size: 1.1rem; /* updated */
+    max-width: 60%;
+    font-size: 1.1rem;
   }
 
   main h1 {
@@ -221,15 +239,32 @@
 
   main p {
     font-size: 1.2rem;
+    color: #222222;
   }
 
+  /* Footer */
   footer {
     padding: 2rem 4rem;
+    text-align: center;            /* center like mobile */
+    background-color: #1F3B6F;
+    color: #FFF8E1;
     font-size: 1.1rem;
   }
 
+  /* Buttons */
   button {
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
+    background-color: #B23A48;
+    color: #FFF8E1;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1F3B6F;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 }
