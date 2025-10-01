@@ -151,179 +151,54 @@ main {
   }
 }
 
-/* Desktop / large screens */
+/* PCs / Desktops (large screens) */
 @media only screen and (min-width: 1025px) {
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #F9FAF5; /* Light neutral background */
-    color: #111827; /* Main text color */
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Navbar */
   .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    background-color: #065F46; /* Deep Green */
-    color: #FFFFFF;
-    border-bottom: 4px solid #14B8A6; /* Teal accent */
+    padding: 2rem;
   }
 
   .navboard h1 {
-    margin: 0;
     font-size: 2rem;
   }
 
   .tagline {
-    font-size: 1rem;
-    color: #D1FAE5; /* Lighter teal */
+    font-size: 1.1rem;
+    color: #D1FAE5;
   }
 
   .navboard ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    gap: 35px;
   }
 
   .navboard a {
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+    padding: 8px 14px;
   }
 
-  .navboard a:hover {
-    background-color: #14B8A6; /* Teal hover */
-  }
-
-  /* Main layout */
-  main {
-    flex: 1;
-    padding: 3rem 6rem;
-  }
-
-  /* Intro section */
-  .intro h1 {
-    font-size: 2.5rem;
-    color: #065F46; /* Deep Green */
+  main section {
+    margin: 2rem auto;
+    border-radius: 2rem;
     text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .intro p {
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    line-height: 1.6;
-    color: #333333;
-  }
-
-  /* Solutions section */
-  .Solutions {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .Solutions article {
-    flex: 1;
-    background-color: #FFFFFF; /* White cards */
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .Solutions article:hover {
-    transform: translateY(-5px);
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+    background-color: #FFFFFF;
+    padding: 2rem 3rem;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
+    max-width: 60%;
+    font-size: 1.1rem;
   }
 
   .Solutions h2 {
-    color: #F59E0B; /* Gold highlight */
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    color: #F59E0B;
   }
 
-  .Solutions p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333333;
-  }
-
-  /* Sustainability section */
-  .Sustainability {
-    background-color: #FFFFFF; /* White card */
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-    margin-bottom: 3rem;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .Sustainability h1 {
-    text-align: center;
-    color: #065F46; /* Deep Green */
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-
-  .Sustainability ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333333;
-  }
-
-  /* Transition button section */
-  .transition {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .transition h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #065F46;
-  }
-
-  .transition button {
-    background-color: #14B8A6; /* Teal button */
-    color: #FFFFFF;
-    border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .transition button:hover {
-    background-color: #065F46; /* Darker green on hover */
-  }
-
-  /* Footer */
   footer {
-    padding: 1.5rem 3rem;
-    text-align: center;
-    background-color: #065F46; /* Deep Green */
-    color: #FFFFFF;
+    padding: 2rem;
     margin-top: auto;
+    text-align: center;
+    background-color: #065F46;
+    color: white;
   }
 
   footer strong {
-    color: #14B8A6; /* Teal accent */
+    color: #14B8A6;
   }
 }
