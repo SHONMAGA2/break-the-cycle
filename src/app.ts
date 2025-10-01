@@ -12,7 +12,7 @@ import aboutRoute from './routes/about';
 import problemsRoute from './routes/problems';
 import solutionsRoute from './routes/solution';
 import evidenceRoute from './routes/evidence';
-import contactRoure from './routes/contact';
+import contactRoute from './routes/contact';
 
 app.use("/",homeRoute);
 app.use("/about",aboutRoute);
