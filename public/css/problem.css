@@ -190,7 +190,7 @@
   .navboard ul {
     display: flex;
     justify-content: center;
-    gap: 25px; /* more space between links */
+    gap: 15px; /* more space between links */
     list-style: none;
     padding: 0;
     margin: 1rem 0 0 0;
@@ -198,7 +198,7 @@
 
   .navboard a {
     padding: 10px 0;       /* taller clickable area */
-    width: 70px;           /* wider links */
+    width: 58x;           /* wider links */
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
