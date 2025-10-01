@@ -162,65 +162,77 @@
   }
 }
 
-  @media only screen and (min-width: 1025px) {
-
-  body {
+  
+@media only screen and (min-width: 1025px) {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
     color: #111827;
-    font-size: 18px; /* slightly bigger for desktops */
   }
 
-  .navboard {
+ 
+
+ .navboard {
     text-align: center;
-    padding: 1.5rem 2rem; /* more padding for desktop */
+    padding: 1rem;
     background-color: #607D8B;
-    color: #212121;
+    color: #FFFFFF;
     border-bottom: 4px solid #FFF8E1;
   }
 
-  .navboard h1 {
+.navboard h1 {
     margin: 0;
-    font-size: 2rem; /* bigger heading */
+    font-size: 1.5rem;
   }
 
-  .navboard ul {
+ .navboard ul {
     display: flex;
     justify-content: center;
-    gap: 15px; /* more space between links */
+    gap: 15px;
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
   }
 
   .navboard a {
-    padding: 10px 0;       /* taller clickable area */
-    width: 58x;           /* wider links */
-    text-align: center;
+    padding: 5px 10px;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    box-sizing: border-box;
-    font-size: 1rem;
   }
 
-  .navboard a:hover {
-    background-color: #10B981;
+
+ .navboard a:hover {
+    background-color: #607D8B;
   }
 
-  main section {
-    padding: 2rem;
-    margin: 1rem auto;
-    text-align: center;
-    border: solid 2px #607D8B; /* thicker border for desktop */
-    border-radius: 2rem;
+main section {
+    border-radius: 1rem;
+    padding: 2rem; /* slightly bigger padding */
+    margin: 2rem;  /* slightly bigger margin */
     background-color: #FFF8E1;
-    box-shadow: 6px 8px 10px rgba(0,0,0,0.3); /* stronger shadow */
-    max-width: 1200px; /* constrain section width */
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
   }
+
+article {
+    display: flex;
+    flex-direction: row; /* side by side for desktop */
+    gap: 2rem; /* more spacing between article boxes */
+    flex-wrap: wrap; /* wrap if screen is smaller than expected */
+    justify-content: center;
+    flex: 1 1 300px; /* each article box takes min 300px but can grow */
+    max-width: 400px;
+  }
+
+ article h2 {
+    margin-top: 0;
+    color: #FBBF24;
+  }
+
 
   main h1 {
     color: #D32F2F;
@@ -239,12 +251,16 @@
   }
 
   footer {
-    display: flex;
-    justify-content: center;
-    background-color: #607D8B;
-    color: #FFF8E1;
-    padding: 1.5rem 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
   }
+
+footer strong {
+    color: #10B981;
+  }
+}
 
   button {
     background-color: #D32F2F;
@@ -267,3 +283,17 @@
   }
 }
  
+
+
+ 
+
+  
+
+  
+
+ 
+ 
+
+  
+
+  
