@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
@@ -14,3 +16,54 @@
 
   <title>Contact – Break the Cycle</title>
 </head>
+<body>
+
+  <%- include("partials/contact_header") %>
+
+  <main>
+    <!-- Intro Section -->
+    <section class="intro">
+      <h1>Let's connect and make a change</h1>
+      <p>We’d love to hear from you! Whether you have questions about cyber safety, want to give feedback, or are interested in joining our “Break the Cycle” initiative, your voice matters. Reach out today and be part of creating a healthier digital environment at Hoërskool Jan Viljoen.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <form action="/form-handler" method="POST">
+        <input type="text" placeholder="Enter your name" name="name" required>
+        <input type="email" placeholder="Enter your email" name="email" required>
+        <textarea name="message" placeholder="Enter your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Direct Info Section -->
+    <section class="info">
+      <h2>Direct Info</h2>
+      <p>Email: <a href="mailto:ycapjannasgrade9@gmail.com">ycapjannasgrade9@gmail.com</a></p>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social_media">
+      <h2>Social Media</h2>
+      <p>Facebook: Ycap Jannas</p>
+      <p><a href="https://whatsapp.com/channel/0029Vb6NvjPE50UiPhUn3g2v" target="_blank">Link to WhatsApp Channel</a></p>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+      <h2>Location</h2>
+      <p><a href="https://maps.app.goo.gl/cHGmPk1z7AZRwJHP7" target="_blank">School Location</a></p>
+    </section>
+
+    <!-- Closing Note -->
+    <section class="closing">
+      <h3>Together, we can break the cycle.</h3>
+    </section>
+  </main>
+
+  <%- include("partials/footer") %>
+
+</body>
+</html>
