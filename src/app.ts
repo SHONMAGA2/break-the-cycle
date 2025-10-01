@@ -9,8 +9,10 @@ app.set("views",path.join(__dirname,"views"));
 
 import homeRoute from './routes/home';
 import aboutRoute from './routes/about';
+import problemsRoute from './routes/problems';
 
 app.use("/",homeRoute);
 app.use("/about",aboutRoute);
+app.use("/problems",problemsRoute);
 
 export default app;
