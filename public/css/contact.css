@@ -1,4 +1,6 @@
-/* Base styles - Mobile first */
+/* -------------------------------
+   Global Styles
+--------------------------------*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,13 +9,88 @@ body {
   color: #264653; /* dark text */
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Contact form styling */
+/* -------------------------------
+   Navbar
+--------------------------------*/
+.navboard {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2A9D8F; /* teal */
+  color: #FFFFFF;
+  border-bottom: 4px solid #E9C46A; /* yellow-gold accent */
+}
+
+.navboard h1 {
+  margin: 0;
+}
+
+.navboard p.tagline {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.navboard ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.navboard a {
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navboard a:hover {
+  background-color: #E9C46A;
+  color: #264653;
+}
+
+/* -------------------------------
+   Intro Section
+--------------------------------*/
+.intro h1 {
+  color: #264653;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  color: #264653;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* -------------------------------
+   Contact Form
+--------------------------------*/
+.contact h2 {
+  color: #264653;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
@@ -29,11 +106,17 @@ main {
   font-size: 1rem;
 }
 
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
 .contact button {
   background-color: #2A9D8F;
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
@@ -41,28 +124,62 @@ main {
   color: #264653;
 }
 
-/* Sections */
-section {
+/* -------------------------------
+   Info, Social Media, Location
+--------------------------------*/
+section.info, 
+section.social_media, 
+section.location {
   margin-bottom: 2rem;
 }
 
-/* Social media & info links */
-.info p, 
-.social_media p, 
-.social_media a,
-.location a {
+section.info h2,
+section.social_media h2,
+section.location h2 {
   color: #264653;
+  margin-bottom: 0.5rem;
 }
 
-.social_media a:hover,
-.location a:hover {
+section.info p,
+section.social_media p,
+section.social_media a,
+section.location a {
+  color: #264653;
+  line-height: 1.5;
+}
+
+section.social_media a:hover,
+section.location a:hover {
   color: #E9C46A;
 }
 
-/* Headings */
-h1, h2, h3 {
+/* -------------------------------
+   Closing Note
+--------------------------------*/
+section.closing h3 {
   color: #264653;
+  text-align: center;
+  font-style: italic;
 }
+
+/* -------------------------------
+   Footer
+--------------------------------*/
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #264653; /* dark teal */
+  color: #fff;
+}
+
+footer strong {
+  color: #F4A261; /* light orange accent */
+}
+
+/* -------------------------------
+   Responsive Design
+--------------------------------*/
+/* Tablet: 768px – 1023px */
 @media screen and (min-width: 768px) {
   .navboard ul {
     justify-content: flex-start;
@@ -84,11 +201,8 @@ h1, h2, h3 {
   }
 }
 
+/* Desktop: 1024px and above */
 @media screen and (min-width: 1024px) {
-  .navboard ul {
-    justify-content: center;
-  }
-
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
