@@ -1,0 +1,204 @@
+/* Global layout fix for sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
+/* Mobile screens */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F9FAF5;
+    color: #111827;
+  }
+
+  .navboard {
+    text-align: center;
+    padding: 1rem;
+    background-color: #065F46; /* Deep Green */
+    color: #FFFFFF;
+    border-bottom: 4px solid #14B8A6; /* Teal accent */
+  }
+
+  .navboard h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;
+    color: #D1FAE5; /* lighter teal */
+  }
+
+  .navboard ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navboard a {
+    padding: 5px 0;
+    width: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navboard a:hover {
+    background-color: #14B8A6;
+  }
+
+  main h1 {
+    color: #065F46;
+  }
+
+  main section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+    color: #333333;
+  }
+
+  main ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .Solutions h2 {
+    color: #F59E0B; /* Gold highlight */
+  }
+
+  button {
+    height: 1.5rem;
+    background-color: #14B8A6;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+  }
+
+  button:hover {
+    background-color: #065F46;
+    cursor: pointer;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+    background-color: #065F46;
+    color: white;
+  }
+
+  footer strong {
+    color: #14B8A6;
+  }
+}
+
+/* Tablets (medium screens) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .navboard {
+    padding: 1.5rem;
+  }
+
+  .navboard h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    color: #D1FAE5;
+  }
+
+  .navboard ul {
+    gap: 25px;
+  }
+
+  .navboard a {
+    padding: 6px 12px;
+  }
+
+  main section {
+    max-width: 80%;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem auto;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.3);
+  }
+
+  footer {
+    padding: 1.5rem;
+    margin-top: auto;
+  }
+}
+
+/* PCs / Desktops (large screens) */
+@media only screen and (min-width: 1025px) {
+
+  .navboard {
+    padding: 2rem;
+  }
+
+  .navboard h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: #D1FAE5;
+  }
+
+  .navboard ul {
+    gap: 35px;
+  }
+
+  .navboard a {
+    padding: 8px 14px;
+  }
+
+  main section {
+    margin: 2rem auto;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 2rem 3rem;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
+    max-width: 60%;
+    font-size: 1.1rem;
+  }
+
+  .Solutions h2 {
+    color: #F59E0B;
+  }
+
+  footer {
+    padding: 2rem;
+    margin-top: auto;
+    text-align: center;
+    background-color: #065F46;
+    color: white;
+  }
+
+  footer strong {
+    color: #14B8A6;
+  }
+}
