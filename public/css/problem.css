@@ -172,99 +172,104 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4;
-    color: #222222;
+    background-color: #f9fafb; /* second CSS color scheme */
+    color: #111827;            /* second CSS text color */
   }
 
   /* Navboard */
   .navboard {
-    text-align: center;            /* centered like mobile */
-    padding: 1rem;                 /* match mobile padding */
-    background-color: #1F3B6F;
-    color: #FFF8E1;
-    border-bottom: 4px solid #B23A48;
+    text-align: center;            /* match first CSS alignment */
+    padding: 1rem;                 /* match first CSS spacing */
+    background-color: #1E3A8A;    /* second CSS color */
+    color: #FFFFFF;                /* second CSS text */
+    border-bottom: 4px solid #10B981; /* second CSS border */
   }
 
   .navboard h1 {
     margin: 0;
-    font-size: 2.5rem;
-    color: #FFF8E1;
+    font-size: 2.5rem;             /* match first CSS sizing */
+    color: #FFFFFF;                /* second CSS color */
   }
 
   .navboard ul {
     display: flex;
-    justify-content: center;       /* center links */
-    gap: 35px;                     /* slightly larger for desktop readability */
+    justify-content: center;       /* center links, match first CSS */
+    gap: 35px;                     /* match first CSS spacing */
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
   .navboard a {
-    padding: 8px 12px;
+    padding: 8px 12px;             /* match first CSS sizing */
     width: auto;
+    text-align: center;
+    color: #FFFFFF;                /* second CSS color */
     text-decoration: none;
-    color: #FFF8E1;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .navboard a:hover {
-    background-color: #B23A48;
-    transform: scale(1.05);
+    background-color: #10B981;     /* second CSS hover color */
+    transform: scale(1.05);        /* match first CSS hover effect */
   }
 
   /* Main sections */
   main section {
-    padding: 2rem 3rem;
-    margin: 2rem auto;
-    text-align: center;             /* match mobile alignment */
-    border: solid 1px #1F3B6F;
-    border-radius: 2rem;
-    background-color: #FFF8E1;
-    box-shadow: 5px 7px 8px rgba(0,0,0,0.3);
-    max-width: 60%;
-    font-size: 1.1rem;
+    padding: 2rem 3rem;            /* match first CSS spacing */
+    margin: 2rem auto;             /* match first CSS alignment */
+    text-align: center;            /* match first CSS alignment */
+    border: solid 1px #1E3A8A;    /* second CSS border color */
+    border-radius: 2rem;           /* match first CSS radius */
+    background-color: #6B7280;     /* second CSS background */
+    box-shadow: 5px 7px 8px rgba(0,0,0,0.3); /* match first CSS shadow */
+    max-width: 60%;                /* match first CSS max width */
+    font-size: 1.1rem;             /* match first CSS text size */
   }
 
   main h1 {
     font-size: 2.8rem;
-    color: #B23A48;
+    color: #FBBF24;               /* second CSS heading color */
   }
 
   main h2 {
     font-size: 1.8rem;
-    color: #1F3B6F;
+    color: #E0E7FF;               /* second CSS subheading color */
   }
 
   main p {
     font-size: 1.2rem;
-    color: #222222;
+    color: #FFFFFF;               /* second CSS paragraph color */
   }
 
   /* Footer */
   footer {
-    padding: 2rem 4rem;
-    text-align: center;            /* center like mobile */
-    background-color: #1F3B6F;
-    color: #FFF8E1;
-    font-size: 1.1rem;
+    padding: 2rem 4rem;           /* match first CSS spacing */
+    text-align: center;           /* match first CSS alignment */
+    background-color: #1E3A8A;   /* second CSS color */
+    color: #FFFFFF;               /* second CSS text */
+    font-size: 1.1rem;           /* match first CSS font size */
+  }
+
+  footer strong {
+    color: #10B981;               /* second CSS accent color */
   }
 
   /* Buttons */
   button {
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
-    background-color: #B23A48;
-    color: #FFF8E1;
+    padding: 1rem 2.5rem;         /* match first CSS sizing */
+    font-size: 1.1rem;            /* match first CSS font size */
+    background-color: #10B981;    /* second CSS button color */
+    color: #FFFFFF;
     border: none;
     border-radius: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   button:hover {
-    background-color: #1F3B6F;
-    transform: scale(1.05);
+    background-color: #1E3A8A;    /* second CSS hover button */
+    transform: scale(1.05);       /* match first CSS hover */
     cursor: pointer;
   }
 }
