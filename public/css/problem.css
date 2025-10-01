@@ -163,7 +163,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1025px) {
 
   body {
     font-family: Arial, sans-serif;
@@ -174,39 +174,40 @@
   }
 
   .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    background-color: #1F3B6F; /* original first CSS nav color */
-    color: #FFF8E1;
-    border-bottom: 4px solid #B23A48;
+    text-align: center;
+    padding: 1rem;
+    background-color: #607D8B;
+    color: #212121;
+    border-bottom: 4px solid #FFF8E1;
   }
 
   .navboard h1 {
-    font-size: 2.5rem;
-    color: #FFF8E1;
+    margin: 0;
+    font-size: 1.5rem;
   }
-
-  .navboard ul {
+  
+    .navboard ul {
     display: flex;
-    gap: 35px;
+    justify-content: center;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
   .navboard a {
-    padding: 8px 12px;
+    padding: 5px 0;        /* adjusted so links fit */
+    width: 53px;           /* exact width per link */
+    text-align: center;    /* center text */
+    color: #FFFFFF;
     text-decoration: none;
-    color: #FFF8E1;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
   }
 
   .navboard a:hover {
-    background-color: #B23A48;
-    transform: scale(1.05);
+    background-color: #10B981;
   }
 
   main section {
@@ -264,3 +265,4 @@
     cursor: pointer;
   }
 }
+ 
