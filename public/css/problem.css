@@ -189,7 +189,7 @@
 
   .navboard ul {
     display: flex;
-    gap: 35px;
+    gap: 35px; /* updated */
   }
 
   .navboard a {
@@ -198,15 +198,15 @@
   }
 
   main section {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem; /* updated */
     margin: 2rem auto;
     text-align: left;
     border: solid 1px #1F3B6F;
     border-radius: 2rem;
     background-color: #FFF8E1;
     box-shadow: 5px 7px 8px rgba(0,0,0,0.3);
-    max-width: 60%;
-    font-size: 1.1rem;
+    max-width: 60%; /* updated */
+    font-size: 1.1rem; /* updated */
   }
 
   main h1 {
