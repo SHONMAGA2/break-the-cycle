@@ -1,0 +1,233 @@
+/* =======================
+   Mobile (small screens)
+======================= */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #222222;
+  }
+
+  .navboard {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1F3B6F; /* Deep Blue */
+    color: #FFF8E1;
+    border-bottom: 4px solid #B23A48; /* Dark Red */
+  }
+
+  .navboard h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFF8E1;
+  }
+
+  .navboard ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navboard a {
+    padding: 5px 10px;  
+    text-align: center;
+    color: #FFF8E1;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .navboard a:hover {
+    background-color: #B23A48; /* Dark Red hover */
+    transform: scale(1.05);
+  }
+
+  main section {
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: solid 1px #1F3B6F; /* Deep Blue border */
+    border-radius: 2rem;
+    background-color: #FFF8E1;
+    box-shadow: 4px 6px 5px rgba(0,0,0,0.3);
+  }
+
+  main h1 {
+    color: #B23A48; /* Dark Red */
+  }
+
+  main h2 {
+    color: #1F3B6F; /* Deep Blue */
+  }
+
+  main p {
+    color: #222222;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+  }
+
+  button {
+    background-color: #B23A48;
+    border: none;
+    color: #FFF8E1;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1F3B6F;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* =======================
+   Tablet (medium screens)
+======================= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #222222;
+  }
+
+  .navboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+    border-bottom: 4px solid #B23A48;
+  }
+
+  .navboard h1 {
+    font-size: 2rem;
+  }
+
+  .navboard ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  main section {
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: left;
+    border: solid 1px #1F3B6F;
+    border-radius: 2rem;
+    background-color: #FFF8E1;
+    box-shadow: 4px 6px 6px rgba(0,0,0,0.3);
+    max-width: 90%;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+    color: #B23A48;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+    color: #1F3B6F;
+  }
+
+  main p {
+    font-size: 1.1rem;
+    color: #222222;
+  }
+
+  footer {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* =======================
+   Desktop (large screens)
+======================= */
+@media only screen and (min-width: 1025px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #222222;
+  }
+
+  .navboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+    border-bottom: 4px solid #B23A48;
+  }
+
+  .navboard h1 {
+    font-size: 2.5rem;
+  }
+
+  .navboard ul {
+    display: flex;
+    gap: 25px;
+  }
+
+  main section {
+    padding: 2.5rem;
+    margin: 2rem auto;
+    text-align: left;
+    border: solid 1px #1F3B6F;
+    border-radius: 2rem;
+    background-color: #FFF8E1;
+    box-shadow: 5px 7px 8px rgba(0,0,0,0.3);
+    max-width: 80%;
+  }
+
+  main h1 {
+    font-size: 2.8rem;
+    color: #B23A48;
+  }
+
+  main h2 {
+    font-size: 1.8rem;
+    color: #1F3B6F;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}
