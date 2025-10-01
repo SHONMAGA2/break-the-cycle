@@ -17,19 +17,8 @@
   <title>Problems – Break the Cycle</title>
 </head>
 <body>
-   <header>
-      <nav class="navboard">
-        <h1>Break the Cycle</h1>
-        <p class="tagline">Breaking barriers. Building futures.</p>
-        <ul>
-          <li><a href="http://localhost:3500/">Home</a></li>
-          <li><a href="http://localhost:3500/about">About</a></li>
-          <li><a href="/solutions">Solutions</a></li>
-          <li><a href="/evidence">Evidence</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-   </header>
+   
+<%- include(partials/problem_header) %>
   
   <main>
     <section class="Intro">
@@ -86,9 +75,7 @@
     </section>
   </main> 
   
-   <footer>
-      <p>&copy; 2025 Break the Cycle | Built by <strong>Burgundary</strong> & YCAP</p>
-   </footer>
+   <%- include(partials/problem_footer) %>
   
 </body>
 </html>
