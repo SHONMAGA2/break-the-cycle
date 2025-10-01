@@ -1,270 +1,114 @@
-/* Global layout fix for sticky footer */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+/* Global Styles for ALL screens */
+body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4; /* Solutions page background color */
+  color: #222222;           /* Solutions page text color */
 }
 
-main {
-  flex: 1; /* pushes footer down */
+.navboard {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1F3B6F; /* Solutions page deep blue */
+  color: #FFFFFF;
+  border-bottom: 4px solid #B23A48; /* Solutions page accent red */
 }
 
-/* Mobile screens */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-
-  body {
-    background-color: #F9FAF5;
-    color: #111827;
-  }
-
-  .navboard {
-    text-align: center;
-    padding: 1rem;
-    background-color: #065F46; /* Deep Green */
-    color: #FFFFFF;
-    border-bottom: 4px solid #14B8A6; /* Teal accent */
-  }
-
-  .navboard h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  .tagline {
-    font-size: 0.9rem;
-    margin: 0.5rem 0 1rem;
-    color: #D1FAE5;
-  }
-
-  .navboard ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navboard a {
-    padding: 5px 0;
-    width: 53px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-
-  .navboard a:hover {
-    background-color: #14B8A6;
-  }
-
-  main h1 {
-    color: #065F46;
-  }
-
-  main section {
-    margin: 1rem;
-    border-radius: 2rem;
-    text-align: center;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
-    color: #333333;
-  }
-
-  main ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .Solutions h2 {
-    color: #F59E0B; /* Gold highlight */
-  }
-
-  button {
-    height: 1.5rem;
-    background-color: #14B8A6;
-    border-radius: 1rem;
-    color: white;
-    border: none;
-    padding: 0 1rem;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #065F46;
-    cursor: pointer;
-  }
-
-  footer {
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto;
-    background-color: #065F46;
-    color: white;
-  }
-
-  footer strong {
-    color: #14B8A6;
-  }
+.navboard h1 {
+  margin: 0;
 }
 
-/* Tablets (medium screens) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
-  }
-
-  .navboard h1 {
-    font-size: 1.8rem;
-  }
-
-  .tagline {
-    font-size: 1rem;
-    color: #D1FAE5;
-  }
-
-  .navboard ul {
-    display: flex;
-    gap: 25px;
-  }
-
-  .navboard a {
-    padding: 6px 12px;
-  }
-
-  main section {
-    max-width: 80%;
-    margin: 1.5rem auto;
-    padding: 1.5rem 2rem;
-    border-radius: 2rem;
-    text-align: left;
-    background-color: #FFFFFF;
-    box-shadow: 6px 6px 8px rgba(0,0,0,0.3);
-  }
-
-  .Solutions article {
-    margin-bottom: 1.5rem;
-  }
-
-  footer {
-    padding: 1.5rem;
-    margin-top: auto;
-  }
+.navboard ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* PCs / Desktops (large screens) */
+.navboard a {
+  padding: 5px 0;
+  width: 53px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navboard a:hover {
+  background-color: #B23A48; /* red hover effect */
+}
+
+main h1 {
+  color: #1F3B6F;
+}
+
+main section {
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+  color: #333333;
+}
+
+.Solutions h2 {
+  color: #F59E0B; /* orange headings for solutions blocks */
+}
+
+button {
+  height: 1.5rem;
+  background-color: #B23A48;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #1F3B6F;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #1F3B6F;
+  color: white;
+}
+
+footer strong {
+  color: #B23A48;
+}
+
+/* Only adjust spacing for larger screens */
 @media only screen and (min-width: 1025px) {
-
   .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
-  }
-
-  .navboard h1 {
-    font-size: 2rem;
-  }
-
-  .tagline {
-    font-size: 1.1rem;
-    color: #D1FAE5;
+    padding: 2rem;
   }
 
   .navboard ul {
-    display: flex;
     gap: 35px;
   }
 
   .navboard a {
-    padding: 8px 14px;
+    padding: 8px 16px;
   }
 
   main section {
     margin: 2rem auto;
-    border-radius: 2rem;
-    text-align: left;
-    background-color: #FFFFFF;
     padding: 2rem 3rem;
-    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
-    max-width: 70%;
-    font-size: 1.1rem;
-  }
-
-  .Solutions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  .Solutions article {
-    flex: 1;
-    background-color: #FFFFFF;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: 6px 6px 8px rgba(0,0,0,0.2);
-    text-align: center;
-  }
-
-  .Solutions h2 {
-    color: #F59E0B;
-    margin-bottom: 1rem;
-  }
-
-  .Sustainability ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style: none;
-  }
-
-  .Sustainability li {
-    background-color: #E5F3EB;
-    padding: 1rem;
-    border-radius: 1rem;
-    flex: 1;
-    margin: 0 0.5rem;
-    text-align: center;
-  }
-
-  .transition {
-    text-align: center;
-    margin-top: 2rem;
+    max-width: 60%;
   }
 
   button {
     padding: 0.7rem 1.5rem;
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    background-color: #14B8A6;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #065F46;
-    cursor: pointer;
   }
 
   footer {
     padding: 2rem;
-    margin-top: auto;
-    text-align: center;
-    background-color: #065F46;
-    color: white;
-  }
-
-  footer strong {
-    color: #14B8A6;
   }
 }
