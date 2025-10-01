@@ -101,22 +101,41 @@ main {
 
   .navboard {
     padding: 1.5rem;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    border-bottom: 4px solid #10B981;
   }
 
   .navboard h1 {
     font-size: 1.8rem;
+    margin: 0;
   }
 
   .tagline {
     font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    color: #E0E7FF;
   }
 
   .navboard ul {
+    display: flex;
+    justify-content: center;
     gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .navboard a {
     padding: 6px 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navboard a:hover {
+    background-color: #10B981;
   }
 
   main section {
@@ -133,10 +152,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-  }
-
-  .article_box h3 {
-    color: #FBBF24;
   }
 
   footer {
