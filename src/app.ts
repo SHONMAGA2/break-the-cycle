@@ -11,7 +11,7 @@ import homeRoute from './routes/home';
 import aboutRoute from './routes/about';
 import problemsRoute from './routes/problems';
 import solutionsRoute from './routes/solution';
-import evidenceRoute from '.routes/evidence';
+import evidenceRoute from './routes/evidence';
 
 app.use("/",homeRoute);
 app.use("/about",aboutRoute);
