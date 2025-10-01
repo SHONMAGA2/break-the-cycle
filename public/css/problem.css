@@ -169,13 +169,14 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4; /* original first CSS background */
-    color: #222222;            /* original first CSS text */
+    background-color: #FFFFFF;
+    color: #111827;
+    font-size: 18px; /* slightly bigger for desktops */
   }
 
   .navboard {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 2rem; /* more padding for desktop */
     background-color: #607D8B;
     color: #212121;
     border-bottom: 4px solid #FFF8E1;
@@ -183,27 +184,28 @@
 
   .navboard h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem; /* bigger heading */
   }
-  
-    .navboard ul {
+
+  .navboard ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px; /* more space between links */
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
 
   .navboard a {
-    padding: 5px 0;        /* adjusted so links fit */
-    width: 53px;           /* exact width per link */
-    text-align: center;    /* center text */
+    padding: 10px 0;       /* taller clickable area */
+    width: 70px;           /* wider links */
+    text-align: center;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
+    font-size: 1rem;
   }
 
   .navboard a:hover {
@@ -211,58 +213,58 @@
   }
 
   main section {
-    padding: 2rem 3rem;
-    margin: 2rem auto;
-    max-width: 60%;
+    padding: 2rem;
+    margin: 1rem auto;
     text-align: center;
-    border: solid 1px #1F3B6F;
+    border: solid 2px #607D8B; /* thicker border for desktop */
     border-radius: 2rem;
     background-color: #FFF8E1;
-    box-shadow: 5px 7px 8px rgba(0,0,0,0.3);
-    font-size: 1.1rem;
+    box-shadow: 6px 8px 10px rgba(0,0,0,0.3); /* stronger shadow */
+    max-width: 1200px; /* constrain section width */
   }
 
   main h1 {
-    font-size: 2.8rem;
-    color: #B23A48;
+    color: #D32F2F;
+    font-size: 2.5rem;
   }
 
   main h2 {
+    color: #607D8B;
     font-size: 1.8rem;
-    color: #1F3B6F;
   }
 
   main p {
-    font-size: 1.2rem;
-    color: #222222;
+    color: #212121;
+    font-size: 1.1rem;
+    line-height: 1.8;
   }
 
   footer {
-    padding: 2rem 4rem;
-    text-align: center;
-    background-color: #1F3B6F;
+    display: flex;
+    justify-content: center;
+    background-color: #607D8B;
     color: #FFF8E1;
-    font-size: 1.1rem;
-  }
-
-  footer strong {
-    color: #B23A48;
+    padding: 1.5rem 2rem;
   }
 
   button {
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
-    background-color: #B23A48;
-    color: #FFF8E1;
+    background-color: #D32F2F;
     border: none;
+    color: white;
     border-radius: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0.8rem 1.5rem; /* bigger for desktop */
+    font-size: 1rem;
+    cursor: pointer;
   }
 
   button:hover {
-    background-color: #1F3B6F;
-    transform: scale(1.05);
-    cursor: pointer;
+    background-color: #FFF8E1; /* fixed extra # */
+    color: #D32F2F; /* keep text visible on hover */
+  }
+
+  main section article:hover {
+    transform: scale(1.03); /* slightly more pronounced hover effect */
+    transition: transform 0.3s ease;
   }
 }
  
