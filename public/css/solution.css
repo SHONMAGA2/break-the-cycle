@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -14,7 +15,6 @@ main {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
   body {
-    font-family: Arial, sans-serif;
     background-color: #F9FAF5;
     color: #111827;
   }
@@ -35,7 +35,7 @@ main {
   .tagline {
     font-size: 0.9rem;
     margin: 0.5rem 0 1rem;
-    color: #D1FAE5; /* lighter teal */
+    color: #D1FAE5;
   }
 
   .navboard ul {
@@ -66,8 +66,7 @@ main {
   }
 
   main section {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     border-radius: 2rem;
     text-align: center;
     background-color: #FFFFFF;
@@ -92,6 +91,7 @@ main {
     color: white;
     border: none;
     padding: 0 1rem;
+    transition: background-color 0.3s ease;
   }
 
   button:hover {
@@ -116,7 +116,10 @@ main {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   .navboard {
-    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
   }
 
   .navboard h1 {
@@ -129,6 +132,7 @@ main {
   }
 
   .navboard ul {
+    display: flex;
     gap: 25px;
   }
 
@@ -138,11 +142,16 @@ main {
 
   main section {
     max-width: 80%;
-    padding: 1.5rem 2rem;
     margin: 1.5rem auto;
+    padding: 1.5rem 2rem;
     border-radius: 2rem;
+    text-align: left;
     background-color: #FFFFFF;
     box-shadow: 6px 6px 8px rgba(0,0,0,0.3);
+  }
+
+  .Solutions article {
+    margin-bottom: 1.5rem;
   }
 
   footer {
@@ -155,7 +164,10 @@ main {
 @media only screen and (min-width: 1025px) {
 
   .navboard {
-    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
   }
 
   .navboard h1 {
@@ -168,6 +180,7 @@ main {
   }
 
   .navboard ul {
+    display: flex;
     gap: 35px;
   }
 
@@ -178,16 +191,69 @@ main {
   main section {
     margin: 2rem auto;
     border-radius: 2rem;
-    text-align: center;
+    text-align: left;
     background-color: #FFFFFF;
     padding: 2rem 3rem;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
-    max-width: 60%;
+    max-width: 70%;
     font-size: 1.1rem;
+  }
+
+  .Solutions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .Solutions article {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.2);
+    text-align: center;
   }
 
   .Solutions h2 {
     color: #F59E0B;
+    margin-bottom: 1rem;
+  }
+
+  .Sustainability ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+  }
+
+  .Sustainability li {
+    background-color: #E5F3EB;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: center;
+  }
+
+  .transition {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    background-color: #14B8A6;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #065F46;
+    cursor: pointer;
   }
 
   footer {
