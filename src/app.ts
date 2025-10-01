@@ -19,7 +19,7 @@ app.use("/about",aboutRoute);
 app.use("/problems",problemsRoute);
 app.use("/solutions",solutionsRoute);
 app.use("/evidence",evidenceRoute);
-app use("/contact",contactRoute);
+app.use("/contact",contactRoute);
 
 
 export default app;
