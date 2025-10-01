@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navbar */
+.navboard {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0D3B66; /* deep navy */
+  color: #FFFFFF;
+  border-bottom: 4px solid #EF8354; /* warm accent */
+}
+
+.navboard h1 {
+  margin: 0;
+}
+
+.navboard ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.navboard a {
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navboard a:hover {
+  background-color: #EF8354;
+  color: #fff;
+}
+
+/* Main Sections */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro, .stats, .quotes, .gallery {
+  margin-bottom: 2rem;
+}
+
+.stats article, .quotes article, .gallery article {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stats h2, .quotes h2, .gallery h2 {
+  color: #0D3B66;
+  margin-bottom: 0.5rem;
+}
+
+.stat-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #0D3B66;
+  color: #fff;
+}
+
+footer strong {
+  color: #EF8354;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 768px) {
+  .stats, .quotes, .gallery {
+    display: grid;
+    gap: 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quotes, .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-images {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  main {
+    padding: 3rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quotes, .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
