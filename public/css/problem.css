@@ -92,79 +92,10 @@
   }
 }
 
+/* Tablets (medium screens) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F4F4F4;
-    color: #222222;
-  }
-
-  .navboard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1F3B6F;
-    color: #FFF8E1;
-    border-bottom: 4px solid #B23A48;
-  }
-
-  .navboard h1 {
-    font-size: 2rem;
-  }
-
-  .navboard ul {
-    display: flex;
-    gap: 25px;
-  }
-
-  .navboard a {
-    padding: 5px 8px;
-    width: auto;
-  }
-
-  main section {
-    padding: 1.5rem 2rem;
-    margin: 2rem auto;
-    text-align: left;
-    border: solid 1px #1F3B6F;
-    border-radius: 2rem;
-    background-color: #FFF8E1;
-    box-shadow: 4px 6px 6px rgba(0,0,0,0.3);
-    max-width: 80%;
-  }
-
-  main h1 {
-    font-size: 2.2rem;
-    color: #B23A48;
-  }
-
-  main h2 {
-    font-size: 1.5rem;
-    color: #1F3B6F;
-  }
-
-  main p {
-    font-size: 1.1rem;
-  }
-
-  footer {
-    padding: 1.5rem;
-    font-size: 1rem;
-  }
-
-  button {
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-  
-@media only screen and (min-width: 1025px) {
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -172,118 +103,190 @@ body {
     color: #222222;
   }
 
- 
-
- .navboard {
+  .navboard {
     text-align: center;
-    padding: 1rem;
-    background-color: #607D8B;
-    color: #FFFFFF;
-    border-bottom: 4px solid #FFF8E1;
+    padding: 1.5rem;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+    border-bottom: 4px solid #B23A48;
   }
 
-.navboard h1 {
+  .navboard h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #FFF8E1;
   }
 
- .navboard ul {
+  .navboard ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .navboard a {
-    padding: 5px 10px;
-    color: #FFFFFF;
+    padding: 8px 0;
+    width: 70px;
+    text-align: center;
+    color: #FFF8E1;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-
- .navboard a:hover {
-    background-color: #607D8B;
+  .navboard a:hover {
+    background-color: #B23A48;
+    transform: scale(1.05);
   }
 
-main section {
-    border-radius: 1rem;
-    padding: 2rem; /* slightly bigger padding */
-    margin: 2rem;  /* slightly bigger margin */
+  main section {
+    padding: 2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    border: solid 2px #1F3B6F;
+    border-radius: 2.5rem;
     background-color: #FFF8E1;
-    color: #FFFFFF;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    box-shadow: 6px 8px 8px rgba(0,0,0,0.3);
   }
-
-article {
-    display: flex;
-    flex-direction: row; /* side by side for desktop */
-    gap: 2rem; /* more spacing between article boxes */
-    flex-wrap: wrap; /* wrap if screen is smaller than expected */
-    justify-content: center;
-    flex: 1 1 300px; /* each article box takes min 300px but can grow */
-    max-width: 400px;
-  }
-
- article h2 {
-    margin-top: 0;
-    color: #FBBF24;
-  }
-
 
   main h1 {
-    color: #D32F2F;
-    font-size: 2.5rem;
+    color: #B23A48;
+    font-size: 2.2rem;
   }
 
   main h2 {
-    color: #607D8B;
+    color: #1F3B6F;
     font-size: 1.8rem;
   }
 
   main p {
-    color: #212121;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    color: #222222;
+    font-size: 1rem;
   }
 
   footer {
+    padding: 1.5rem;
     text-align: center;
-    padding: 1rem;
-    background-color: #1E3A8A;
-    color: #FFFFFF;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
   }
-
-footer strong {
-    color: #10B981;
-  }
-}
 
   button {
-    background-color: #D32F2F;
+    height: 2rem;
+    padding: 0 1.5rem;
+    background-color: #B23A48;
+    color: #FFF8E1;
     border: none;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.8rem 1.5rem; /* bigger for desktop */
-    font-size: 1rem;
-    cursor: pointer;
+    border-radius: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   button:hover {
-    background-color: #FFF8E1; /* fixed extra # */
-    color: #D32F2F; /* keep text visible on hover */
-  }
-
-  main section article:hover {
-    transform: scale(1.03); /* slightly more pronounced hover effect */
-    transition: transform 0.3s ease;
+    background-color: #1F3B6F;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 }
- 
 
+/* PCs / Desktops (large screens) */
+@media only screen and (min-width: 1025px) {
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #222222;
+  }
+
+  .navboard {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+    border-bottom: 4px solid #B23A48;
+  }
+
+  .navboard h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #FFF8E1;
+  }
+
+  .navboard ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .navboard a {
+    padding: 10px 0;
+    width: 90px;
+    text-align: center;
+    color: #FFF8E1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .navboard a:hover {
+    background-color: #B23A48;
+    transform: scale(1.05);
+  }
+
+  main section {
+    padding: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: solid 2px #1F3B6F;
+    border-radius: 3rem;
+    background-color: #FFF8E1;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.3);
+  }
+
+  main h1 {
+    color: #B23A48;
+    font-size: 3rem;
+  }
+
+  main h2 {
+    color: #1F3B6F;
+    font-size: 2rem;
+  }
+
+  main p {
+    color: #222222;
+    font-size: 1.1rem;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1F3B6F;
+    color: #FFF8E1;
+  }
+
+  button {
+    height: 2.5rem;
+    padding: 0 2rem;
+    background-color: #B23A48;
+    color: #FFF8E1;
+    border: none;
+    border-radius: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1F3B6F;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
 
  
 
